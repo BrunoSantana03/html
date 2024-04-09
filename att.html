@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplos DOM</title>
+<style>
+  body {
+    display: flex;
+    justify-content: space-around;
+  }
+  .column {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    overflow: auto;
+  }
+</style>
+</head>
+<body>
+  <div class="column">
+    <h2>Exemplo Funcional - document</h2>
+    <button onclick="alert(document.title)">Mostrar Título</button>
+    <p>Clique no botão para mostrar o título do documento.</p>
+  </div>
+
+  <div class="column">
+    <h2>Código do Exemplo - document</h2>
+    <pre><code>
+      &lt;button onclick="alert(document.title)"&gt;Mostrar Título&lt;/button&gt;
+      &lt;p&gt;Clique no botão para mostrar o título do documento.&lt;/p&gt;
+    </code></pre>
+  </div>
+
+  <div class="column">
+    <h2>Exemplo Funcional - getElementById()</h2>
+    <div id="exampleId">Este é um exemplo de getElementById()</div>
+    <button onclick="document.getElementById('exampleId').style.color = 'red'">Mudar Cor</button>
+  </div>
+
+  <div class="column">
+    <h2>Código do Exemplo - getElementById()</h2>
+    <pre><code>
+      &lt;div id="exampleId"&gt;Este é um exemplo de getElementById()&lt;/div&gt;
+      &lt;button onclick="document.getElementById('exampleId').style.color = 'red'"&gt;Mudar Cor&lt;/button&gt;
+    </code></pre>
+  </div>
+
+  <div class="column">
+    <h2>Exemplo Funcional - getElementsByClassName()</h2>
+    <ul class="exampleClass">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <button onclick="document.getElementsByClassName('exampleClass')[0].style.backgroundColor = 'lightblue'">Mudar Fundo</button>
+  </div>
+
+  <div class="column">
+    <h2>Código do Exemplo - getElementsByClassName()</h2>
+    <pre><code>
+      &lt;ul class="exampleClass"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;button onclick="document.getElementsByClassName('exampleClass')[0].style.backgroundColor = 'lightblue'"&gt;Mudar Fundo&lt;/button&gt;
+    </code></pre>
+  </div>
+
+  <div class="column">
+    <h2>Exemplo Funcional - getElementsByTagName()</h2>
+    <p>Este é um exemplo de getElementsByTagName()</p>
+    <button onclick="document.getElementsByTagName('p')[0].style.fontWeight = 'bold'">Negrito</button>
+  </div>
+
+  <div class="column">
+    <h2>Código do Exemplo - getElementsByTagName()</h2>
+    <pre><code>
+      &lt;p&gt;Este é um exemplo de getElementsByTagName()&lt;/p&gt;
+      &lt;button onclick="document.getElementsByTagName('p')[0].style.fontWeight = 'bold'"&gt;Negrito&lt;/button&gt;
+    </code></pre>
+  </div>
+
+  <div class="column">
+    <h2>Exemplo Funcional - createElement()</h2>
+    <div id="exampleElement"></div>
+    <button onclick="addElement()">Adicionar Elemento</button>
+    <script>
+      function addElement() {
+        var newElement = document.createElement("p");
+        var text = document.createTextNode("Novo elemento criado!");
+        newElement.appendChild(text);
+        document.getElementById("exampleElement").appendChild(newElement);
+      }
+    </script>
+  </div>
+
+  <div class="column">
+    <h2>Código do Exemplo - createElement()</h2>
+    <pre><code>
+      &lt;div id="exampleElement"&gt;&lt;/div&gt;
+      &lt;button onclick="addElement()"&gt;Adicionar Elemento&lt;/button&gt;
+      &lt;script&gt;
+        function addElement() {
+          var newElement = document.createElement("p");
+          var text = document.createTextNode("Novo elemento criado!");
+          newElement.appendChild(text);
+          document.getElementById("exampleElement").appendChild(newElement);
+        }
+      &lt;/script&gt;
+    </code></pre>
+  </div>
+
+  <div class="column">
+    <h2>Exemplo Funcional - innerHTML</h2>
+    <div id="exampleInnerHTML">Este é um exemplo de innerHTML</div>
+    <button onclick="document.getElementById('exampleInnerHTML').innerHTML = 'Texto alterado!'">Alterar Texto</button>
+  </div>
+
+  <div class="column">
+    <h2>Código do Exemplo - innerHTML</h2>
+    <pre><code>
+      &lt;div id="exampleInnerHTML"&gt;Este é um exemplo de innerHTML&lt;/div&gt;
+      &lt;button onclick="document.getElementById('exampleInnerHTML').innerHTML = 'Texto alterado!'"&gt;Alterar Texto&lt;/button&gt;
+    </code></pre>
+  </div>
+</body>
+</html>
