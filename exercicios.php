@@ -12,15 +12,6 @@
 <?php
   echo "Unileste";
 ?>
-<p><b>código</b></p>
-
-		<li>Escreva um código em PHP para mostrar os números de 1 até 100 na tela.</li> 
 	</ol>
-<?php
-?>
- 
-
-
-
 </body>
 </html>
