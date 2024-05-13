@@ -8,13 +8,13 @@
   <body>
 	<h1>Exercícios</h1>
 	<ol>
-	<li>Escreva um código em PHP para mostrar o seu nome na tela.<p>
+	<li>Escreva um código em PHP para mostrar o seu nome na tela.</li>
 <?php
   echo "Unileste";
 ?>
 <p><b>código</b></p>
 <p><pre> echo "unileste" </pre></p>
-		<li>Escreva um código em PHP para mostrar os números de 1 até 100 na tela. 
+		<li>Escreva um código em PHP para mostrar os números de 1 até 100 na tela.</li> 
 	</ol>
 <?php
 ?>
