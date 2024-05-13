@@ -10,7 +10,8 @@
 	<ol>
 	<li>Escreva um código em PHP para mostrar o seu nome na tela.</li>
 <?php
-  echo "Unileste";
+$nome = "Seu Nome";
+echo "Meu nome é $nome";
 ?>
 	</ol>
 </body>
