@@ -13,7 +13,7 @@
   echo "Unileste";
 ?>
 <p><b>código</b></p>
-<p><pre> echo "unileste" </pre></p>
+
 		<li>Escreva um código em PHP para mostrar os números de 1 até 100 na tela.</li> 
 	</ol>
 <?php
