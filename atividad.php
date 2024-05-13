@@ -110,6 +110,7 @@
 
     <?php
     $nota = 95; 
+    echo "$nota"
     ?>
 
 <li>Utilize a estrutura switch para imprimir o conceito correspondente à nota inserida na variável. Defina os seguintes intervalos para os conceitos: A: 90-100 B: 80-89 C: 70-79 D: 60-69 E: 50-5</li>
